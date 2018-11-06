@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Display2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QB1-6M-MaK">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Test Display2" id="BRz-NN-PZ0"/>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzg-Tb-DGv">
+                                <rect key="frame" x="7" y="570" width="45" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Zjh-nR-3KZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xq-hk-dd6">
+                                <rect key="frame" x="74" y="570" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="bEV-aC-OSa"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbj-VA-otL"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9iE-oV-PBz">
+                                <rect key="frame" x="0.0" y="72" width="600" height="474"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="QAj-PK-26C" customClass="myTableViewCell" customModule="Display2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QAj-PK-26C" id="Nua-2m-21B">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cXF-Xm-G0t">
+                                                    <rect key="frame" x="14" y="3" width="76" height="74"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="76" id="ndg-MO-W8U"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cXF-Xm-G0t" firstAttribute="top" secondItem="Nua-2m-21B" secondAttribute="topMargin" constant="-5" id="dq8-ti-mXN"/>
+                                                <constraint firstItem="cXF-Xm-G0t" firstAttribute="bottom" secondItem="Nua-2m-21B" secondAttribute="bottomMargin" id="s4t-Eu-Xi2"/>
+                                                <constraint firstItem="cXF-Xm-G0t" firstAttribute="leading" secondItem="Nua-2m-21B" secondAttribute="leadingMargin" constant="6" id="yOq-ZN-3ew"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="drawNumber" destination="cXF-Xm-G0t" id="WSN-pI-fcQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bzg-Tb-DGv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2Kt-be-zZD"/>
+                            <constraint firstItem="Bzg-Tb-DGv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-13" id="7gI-xU-nET"/>
+                            <constraint firstItem="2xq-hk-dd6" firstAttribute="leading" secondItem="Bzg-Tb-DGv" secondAttribute="trailing" constant="22" id="HYS-pJ-AFL"/>
+                            <constraint firstItem="Bzg-Tb-DGv" firstAttribute="top" secondItem="9iE-oV-PBz" secondAttribute="bottom" constant="24" id="Hd2-6e-p7d"/>
+                            <constraint firstItem="9iE-oV-PBz" firstAttribute="top" secondItem="QB1-6M-MaK" secondAttribute="bottom" id="Hx8-tF-roI"/>
+                            <constraint firstAttribute="trailing" secondItem="QB1-6M-MaK" secondAttribute="trailing" id="ZjP-1K-X6E"/>
+                            <constraint firstItem="QB1-6M-MaK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cKL-cK-zDt"/>
+                            <constraint firstItem="QB1-6M-MaK" firstAttribute="trailing" secondItem="9iE-oV-PBz" secondAttribute="trailing" id="fkn-Fk-IMw"/>
+                            <constraint firstItem="QB1-6M-MaK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="oUE-0i-cbm"/>
+                            <constraint firstItem="QB1-6M-MaK" firstAttribute="leading" secondItem="9iE-oV-PBz" secondAttribute="leading" id="ySK-6w-a3Y"/>
+                            <constraint firstItem="Bzg-Tb-DGv" firstAttribute="top" secondItem="2xq-hk-dd6" secondAttribute="top" id="z8j-Lj-uRd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputNum" destination="Bzg-Tb-DGv" id="sZT-4t-RPu"/>
+                        <outlet property="tblList" destination="9iE-oV-PBz" id="ran-z0-kR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="499"/>
+        </scene>
+    </scenes>
+</document>
