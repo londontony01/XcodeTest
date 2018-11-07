@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // some test changes on file before commit this file to source control local repository
     // 11:23 pm on 6/11/2018
+    //
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
